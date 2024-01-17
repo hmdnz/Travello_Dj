@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% comment %} {% block title %} My page {% endblock %} {% endcomment %}
+
+{% block content %}
+
+<h1> Hello my page </h1>
+
+   <form action="add" >
+        
+        {{ form.as_p }}
+        Enter first Number: <input type="text" name="num1"><br>
+        Enter second Number: <input type="text" name="num2"><br>
+
+       <input type="submit" value="Submit">
+    </form>
+{% endblock %}
+ 
